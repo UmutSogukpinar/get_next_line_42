@@ -6,7 +6,7 @@
 /*   By: umut <umut@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 15:51:35 by usogukpi          #+#    #+#             */
-/*   Updated: 2024/12/01 01:23:17 by umut             ###   ########.fr       */
+/*   Updated: 2024/12/27 12:06:32 by umut             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,10 +88,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 char	*ft_update_repo(char *total_line, char *repo)
 {
+	char	*new_repo;
 	size_t	repo_len;
 	size_t	line_len;
 
 	repo_len = ft_strlen(repo);
 	line_len = ft_strlen(total_line);
-	return (ft_substr(repo, line_len, repo_len - line_len));
+	new_repo = ft_substr(repo, line_len, repo_len - line_len);
+	if (repo)
+		free(repo);
+	return (new_repo);
 }

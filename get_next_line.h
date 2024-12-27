@@ -6,7 +6,7 @@
 /*   By: umut <umut@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 15:47:35 by usogukpi          #+#    #+#             */
-/*   Updated: 2024/12/01 01:23:00 by umut             ###   ########.fr       */
+/*   Updated: 2024/12/27 11:57:39 by umut             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 12
+#  define BUFFER_SIZE 40
 # endif
 
 # include <stdlib.h>
